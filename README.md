@@ -27,6 +27,8 @@
 
 `cat "A" >> "B"` A의 내용을 B의 내용 끝에 연결
 
+`clip < ""` 다음 파일의 내용을 클립보드로 복사
+
 ## git 명령어 (커밋)
 
 `git init` 현재 디렉터리에서 깃을 사용할 수 있도록 저장소로 초기화
@@ -90,3 +92,22 @@
 
 `git cherry-pick 헤시값` 헤시값 버전을 최신 버전으로 올리기(체리픽)
 
+## Push
+`git remote add origin "주소"` 지역 저장서를 원격 저장소에 연결
+
+`git remote -v` 연결 확인하기
+
+`git branch -M main` 기본 브랜치를 main브랜치로 바꾸기
+
+`git push -u origin main` 최초 푸시
+
+`git push` 푸시
+
+## Pull
+`git pull origin main` 풀
+
+## SSH
+`ssh-keygen` 키 생성(private, public)
+>퍼블릭키는 깃허브에
+>
+>프라이빗키는 컴퓨터에
